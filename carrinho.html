@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style2.css">
+    
+    <title>Shopping Cart</title>
+</head>
+<body>
+     <!-- Navbar -->
+     <nav>
+        <ul>
+            <li><a href="#about">Sobre Nós</a></li>
+            <li><a href="#instructors">Instrutores</a></li>
+            <li><a href="#products">Produtos</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+        <div class="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+        </div>
+    </nav>
+
+    <!-- Botão de voltar -->
+    <a href="home.html" class="back-btn">← Continue shopping</a> 
+
+    <div class="container">
+        <div class="cart">
+            <h2>Shopping cart</h2>
+            <p>You have 4 items in your cart</p>
+
+            <div class="cart-item">
+                <img src="iphone.png" alt="Iphone 11 pro">
+                <div class="item-details">
+                    <h3>Iphone 11 pro</h3>
+                    <p>256GB, Navy Blue</p>
+                    <span>2 x $900</span>
+                </div>
+                <span class="price">$900</span>
+                <button class="delete">🗑</button>
+            </div>
+
+            <div class="cart-item">
+                <img src="samsung.png" alt="Samsung Galaxy Note 10">
+                <div class="item-details">
+                    <h3>Samsung Galaxy Note 10</h3>
+                    <p>256GB, Navy Blue</p>
+                    <span>2 x $900</span>
+                </div>
+                <span class="price">$900</span>
+                <button class="delete">🗑</button>
+            </div>
+
+            <div class="cart-item">
+                <img src="canon.png" alt="Canon EOS M50">
+                <div class="item-details">
+                    <h3>Canon EOS M50</h3>
+                    <p>Onyx Black</p>
+                    <span>1 x $1199</span>
+                </div>
+                <span class="price">$1199</span>
+                <button class="delete">🗑</button>
+            </div>
+
+            <div class="cart-item">
+                <img src="macbook.png" alt="MacBook Pro">
+                <div class="item-details">
+                    <h3>MacBook Pro</h3>
+                    <p>1TB, Graphite</p>
+                    <span>1 x $1799</span>
+                </div>
+                <span class="price">$1799</span>
+                <button class="delete">🗑</button>
+            </div>
+        </div>
+
+        <div class="checkout">
+            <h2>Card details</h2>
+            <form>
+                <div class="card-types">
+                    <img src="mastercard.png" alt="Mastercard">
+                    <img src="visa.png" alt="Visa">
+                    <img src="paypal.png" alt="Paypal">
+                </div>
+
+                <input type="text" placeholder="Cardholder's Name">
+                <input type="text" placeholder="Card Number">
+                <input type="text" placeholder="Expiration">
+                <input type="text" placeholder="CVV">
+            </form>
+
+            <div class="summary">
+                <p>Subtotal: <span>$4798.00</span></p>
+                <p>Shipping: <span>$20.00</span></p>
+                <p>Total (Incl. taxes): <span>$4818.00</span></p>
+            </div>
+
+            <button class="checkout-btn">$4818.00 CHECKOUT</button>
+        </div>
+    </div>
+</body>
+</html>
