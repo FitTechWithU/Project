@@ -44,14 +44,18 @@ header i {
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 2.5em;
   color: var(--fonte_preta);
 }
 
+p{
+  text-align: center;
+}
+
 .first_container {
-  height: 30vh;
+  height: 40vh;
   color: var(--fonte_branca);
-  background-image: url("../img/background_section.png");
+  background-image: url("../img/teste.jpeg");
   background-size: cover;
   /* Faz a imagem cobrir toda a área */
   background-position: center;
@@ -61,7 +65,7 @@ h1 {
 }
 
 .square {
-  background: rgba(255, 209, 58, 0.5);
+  background:rgb(255 255 255 / 55%);
   border-radius: 4px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(2px);
@@ -77,14 +81,33 @@ main {
   text-align: justify;
 }
 
+.image-container {
+  display: flex;
+}
+
+.left-image img {
+  height: 40.8vh; /* Altura da imagem em pé */
+  width: auto;
+  border-radius: 8px;
+}
+
+
+.image_right1, .image_right2{
+  display: flex;
+  height: 20vh; /* Altura ajustada para manter a proporção */
+  width: auto;
+  border-radius: 8px;
+  margin: 0 0 10px 10px;
+}
+
 h2 {
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: 1.9rem;
   margin-bottom: 28px;
 }
 
 .about_fitTech {
-  background-image: url("../img/academia_fitTech.png");
+  background-image: url("../img/academia.webp");
   background-size: cover;
   /* Faz a imagem cobrir toda a área */
   background-position: center;
@@ -92,16 +115,17 @@ h2 {
   background-repeat: no-repeat;
   /* Impede que a imagem se repita */
   background-attachment: fixed;
-  height: 30vh;
+  height: 35vh;
   width: 85%;
   box-shadow: 0px 20px 15px rgba(191, 191, 191, 0.45);
   margin-bottom: 28px;
+  border-radius: 16px;
 }
 
 .about_fitTech button {
   background-color: #ffffff;
   padding: 10px 28px;
-  border-radius: 58px;
+  border-radius: 8px;
   border: none;
   text-transform: uppercase;
   font-weight: bold;
@@ -115,7 +139,11 @@ h2 {
 
 .second_container {
   color: var(--fonte_preta);
-  background-color: var(--background_claro);
+  /* background-color: var(--background_claro); */
+  background-image: url(../img/background_opcional.jpeg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
   padding: 28px 0px;
 }
 
@@ -129,9 +157,10 @@ span {
 }
 
 .Instructors img {
-  height: 24vh;
-  width: 240px;
+  height: 300px;
   border-radius: 50%;
+  width: 300px;
+  box-shadow: 0 4px 30px #00000042;
 }
 
 .card {
@@ -154,15 +183,16 @@ span {
 
 .box {
   background-color: #fff;
-  height: 25vh;
-  width: 200px;
+  /* height: 25vh; */
+  /* width: 200px; */
+  padding: 15px;
   border-radius: 10px;
 }
 
 .box5 {
   background-color: #fff;
   /* height: 25vh; */
-  width: 200px;
+  /* width: 200px; */
   padding: 15px;
   border-radius: 10px;
 }
@@ -171,17 +201,17 @@ span {
   margin: 28px 0px;
   background-color: var(--background_claro);
   padding: 10px 28px;
-  border-radius: 58px;
+  border-radius: 8px;
   border: none;
   text-transform: uppercase;
-  font-weight: bold;
+  /* font-weight: bold; */
   font-size: 1em;
   transition: 0.5s;
 }
 
 .third_container button:hover {
   background-color: #e3b747;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .third_container a {
@@ -229,7 +259,7 @@ footer {
 }
 
 strong {
-  color: var(--span_color);
+  color: var(--fonte_preta);
   font-size: 1.2em;
 }
 
@@ -246,7 +276,17 @@ strong {
   transition: background-color 0.3s ease;
 }
 
-
 .btn_back:hover {
   background-color: #e3b747;
+}
+
+.down{
+  color: var(--span_color);
+  font-size: 60px;
+  margin-bottom: 40px;
+}
+.up{
+  color: var(--span_color);
+  font-size: 60px;
+  margin-top: 40px;
 }
