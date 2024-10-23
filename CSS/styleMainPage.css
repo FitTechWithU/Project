@@ -51,14 +51,22 @@ h1 {
 .first_container {
   height: 30vh;
   color: var(--fonte_branca);
-  background-image: url("imagens/background_section.png");
-  background-size: cover; /* Faz a imagem cobrir toda a área */
-  background-position: center; /* Centraliza a imagem */
-  background-repeat: no-repeat; /* Impede que a imagem se repita */
+  background-image: url("../img/background_section.png");
+  background-size: cover;
+  /* Faz a imagem cobrir toda a área */
+  background-position: center;
+  /* Centraliza a imagem */
+  background-repeat: no-repeat;
+  /* Impede que a imagem se repita */
 }
 
 .square {
-  background-color: #e3b747bf;
+  background: rgba(255, 209, 58, 0.5);
+  border-radius: 4px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  /* background-color: #e3b747bf; */
   padding: 10px 20px;
 }
 
@@ -76,10 +84,13 @@ h2 {
 }
 
 .about_fitTech {
-  background-image: url("imagens/academia_fitTech.png");
-  background-size: cover; /* Faz a imagem cobrir toda a área */
-  background-position: center; /* Centraliza a imagem */
-  background-repeat: no-repeat; /* Impede que a imagem se repita */
+  background-image: url("../img/academia_fitTech.png");
+  background-size: cover;
+  /* Faz a imagem cobrir toda a área */
+  background-position: center;
+  /* Centraliza a imagem */
+  background-repeat: no-repeat;
+  /* Impede que a imagem se repita */
   background-attachment: fixed;
   height: 30vh;
   width: 85%;
@@ -132,7 +143,11 @@ span {
   padding: 48px 0px 20px 0px;
 }
 
-.box img{
+.box img {
+  height: 18vh;
+  border-radius: 10px;
+}
+.box5 img {
   height: 18vh;
   border-radius: 10px;
 }
@@ -141,6 +156,14 @@ span {
   background-color: #fff;
   height: 25vh;
   width: 200px;
+  border-radius: 10px;
+}
+
+.box5 {
+  background-color: #fff;
+  /* height: 25vh; */
+  width: 200px;
+  padding: 15px;
   border-radius: 10px;
 }
 
@@ -174,10 +197,12 @@ span {
 }
 
 .titulo_produto {
+  text-align: center;
   font-weight: bolder;
 }
 
 footer {
+  background-color: #ffd468;
   padding: 28px;
 }
 
@@ -190,6 +215,7 @@ footer {
 .flex_row {
   display: flex;
   flex-direction: row;
+  padding: 15px;
 }
 
 .flex_column {
@@ -197,7 +223,30 @@ footer {
   flex-direction: column;
 }
 
+.flex_column5 {
+  display: flex;
+  flex-direction: column;
+}
+
 strong {
   color: var(--span_color);
   font-size: 1.2em;
+}
+
+.btn_back {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 16px;
+  background-color: #ffd468;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+
+.btn_back:hover {
+  background-color: #e3b747;
 }
