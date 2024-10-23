@@ -23,8 +23,9 @@ body {
 
 header {
     justify-content: space-between;
-    background-color: #4f6cff;
+    background-color: #ffd468;
     align-items: center;
+    color: #000000;
 }
 
 header nav {
@@ -34,7 +35,7 @@ header nav {
 }
 
 header a {
-    color: white;
+    color: #000000;
     text-decoration: none;
     text-transform: uppercase;
 }
@@ -76,11 +77,11 @@ table {
 }
 
 .cart {
-    background: rgba(0, 0, 0, 0.33);
+    background: rgba(0, 0, 0, 0.5);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(10px);
     /* background-color: #333; */
     padding: 40px; 
     width: 55%;
@@ -92,6 +93,7 @@ table {
     font-size: 24px;
     text-align: center;
     text-transform: uppercase;
+    color: #ffd468;
 }
 
 .cart p {
@@ -109,9 +111,10 @@ table {
 }
 
 .cart-item img {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     border-radius: 8px;
+    box-shadow: 0 4px 30px #ffd46838;
 }
 
 .item-details h3 {
@@ -142,14 +145,19 @@ table {
 }
 
 .checkout {
-    background: rgba(0, 0, 0, 0.33);
+    background: rgba(0, 0, 0, 0.5);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(5px);
     color: white;
     padding: 40px;
     width: 40%;
+}
+
+label{
+    display: block;
+    margin-top: 15px;
 }
 
 .checkout h2 {
@@ -165,11 +173,14 @@ table {
 }
 
 .checkout input {
+    margin-top: 5px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    box-sizing: border-box;
     width: 100%;
     padding: 10px;
-    margin-bottom: 15px;
-    border-radius: 5px;
-    border: none;
+    box-shadow: 0 4px 30px #ffd46838;
 }
 
 .summary {
@@ -206,14 +217,14 @@ table {
     text-transform: uppercase;
     text-decoration: none;
     font-size: 16px;
-    background-color: #4f6cff;
+    background-color: #ffd468;
     padding: 10px 15px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
 .back-btn:hover {
-    background-color: #0053ba;
+    background-color: #e3b747;
 }
 
 .center {
@@ -224,14 +235,19 @@ table {
 
   
 footer {
-    background-color: #4f6cff;
-    color: #ffffff;
+    background-color: #ffd468;
+    color: #000000;
     padding: 28px;
   }
 
-  main{
-    flex: 1;
-  }
+main{
+   flex: 1;
+}
+
+.important{
+    color: #ffd468;
+    font-weight: bolder;
+}
 
   @media screen and (min-width: 2150px) {
     td, th {
