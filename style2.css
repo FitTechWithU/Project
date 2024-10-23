@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 * {
     margin: 0;
     padding: 0;
@@ -5,34 +7,59 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: "Roboto", sans-serif;
     background-color: #646464;
     color: #333;
-}
-
-/* Navbar */
-nav {
-    display: flex;
-    justify-content: space-between;
+    background-image: url(img/pexels-photo-6389886.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* display: flex;
+    justify-content: center;
     align-items: center;
-    background-color: #6A71A3;
-    padding: 10px 20px;
+    height: 100vh;
+    margin: 0; */
 }
 
-nav ul {
-    list-style: none;
+header {
+    justify-content: space-between;
+    background-color: #4f6cff;
+    align-items: center;
+}
+
+header nav {
     display: flex;
-    flex-wrap: wrap;
+    padding: 28px;
+    gap: 22px;
 }
 
-nav ul li {
-    margin: 0 10px;
-}
-
-nav ul li a {
-    color: #fff;
+header a {
+    color: white;
     text-decoration: none;
-    font-size: 16px;
+    text-transform: uppercase;
+}
+
+header i {
+    padding: 28px;
+}
+
+.card-types{
+    font-size: 55px;
+    padding: 5px;
+    text-align: center;
+}
+
+td, th {
+    padding: 15px;
+}
+
+.center {
+    display: flex;
+}
+
+table {
+    display: inline-block;
+    text-align: center;
 }
 
 .cart-icon {
@@ -44,33 +71,41 @@ nav ul li a {
 .container {
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    width: 70%;
     margin: 50px auto;
 }
 
 .cart {
-    background-color: #333;
-    padding: 20px;
-    width: 60%;
+    background: rgba(0, 0, 0, 0.33);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    /* background-color: #333; */
+    padding: 40px; 
+    width: 55%;
     color: white;
-    border-radius: 8px;
+    border-radius: 16px;
 }
 
 .cart h2 {
     font-size: 24px;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .cart p {
-    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .cart-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    /* justify-content: space-between;
+    align-items: center; */
     margin-bottom: 15px;
     border-bottom: 1px solid #555;
-    padding-bottom: 10px;
+    padding-bottom: 40px;
 }
 
 .cart-item img {
@@ -90,7 +125,7 @@ nav ul li a {
 
 .item-details span {
     font-size: 14px;
-    color: #ddd;
+    color: #ffd468;
 }
 
 .price {
@@ -103,20 +138,25 @@ nav ul li a {
     border: none;
     color: #ff4444;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 35px;
 }
 
 .checkout {
-    background-color: #2680eb;
+    background: rgba(0, 0, 0, 0.33);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     color: white;
-    padding: 20px;
-    width: 35%;
-    border-radius: 8px;
+    padding: 40px;
+    width: 40%;
 }
 
 .checkout h2 {
     font-size: 24px;
-    margin-bottom: 20px;
+    color:#ffd468;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .card-types img {
@@ -144,8 +184,9 @@ nav ul li a {
 .checkout-btn {
     width: 100%;
     padding: 15px;
-    background-color: #0069d9;
-    color: white;
+    background-color: #ffd468;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
     font-size: 18px;
     border: none;
     border-radius: 8px;
@@ -154,17 +195,18 @@ nav ul li a {
 }
 
 .checkout-btn:hover {
-    background-color: #0053ba;
+    background-color: #e3b747;
 }
 
 /*Button back*/
 .back-btn {
     display: inline-block;
     margin-bottom: 20px;
-    color: #fff;
+    color: #000000;
+    text-transform: uppercase;
     text-decoration: none;
     font-size: 16px;
-    background-color: #0069d9;
+    background-color: #4f6cff;
     padding: 10px 15px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
@@ -173,3 +215,26 @@ nav ul li a {
 .back-btn:hover {
     background-color: #0053ba;
 }
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
+footer {
+    background-color: #4f6cff;
+    color: #ffffff;
+    padding: 28px;
+  }
+
+  main{
+    flex: 1;
+  }
+
+  @media screen and (min-width: 2150px) {
+    td, th {
+        padding: 30px;
+    }
+  }

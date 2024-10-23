@@ -1,36 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style2.css">
-    
+    <script src="https://kit.fontawesome.com/f9a0acd7af.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="fit tech - main page/styleMainPage.css"> -->
+
     <title>Shopping Cart</title>
 </head>
+
 <body>
-     <!-- Navbar -->
-     <nav>
-        <ul>
-            <li><a href="#about">Sobre Nós</a></li>
-            <li><a href="#instructors">Instrutores</a></li>
-            <li><a href="#products">Produtos</a></li>
-            <li><a href="#contact">Contato</a></li>
-        </ul>
-        <div class="cart-icon">
-            <i class="fas fa-shopping-cart"></i>
-        </div>
-    </nav>
+    <!-- Navbar -->
+    <header class="flex_row">
+        <nav>
+            <a href="">Sobre nós</a>
+            <a href="">Instrutores</a>
+            <a href="">Produtos</a>
+            <a href="">Contato</a>
+        </nav>
+    </header>
 
-    <!-- Botão de voltar -->
-    <a href="home.html" class="back-btn">← Continue shopping</a> 
+    <main>
+        <div class="container">
+            <div class="cart">
+                <h2>Shopping cart</h2>
+                <p>Você tem 4 itens no seu carrinho!</p>
 
-    <div class="container">
-        <div class="cart">
-            <h2>Shopping cart</h2>
-            <p>You have 4 items in your cart</p>
 
-            <div class="cart-item">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Foto</th>
+                            <th>Produto</th>
+                            <th>Descrição</th>
+                            <th>Parcelas</th>
+                            <th>Preço</th>
+                        </tr>
+                    </thead>
+                    <tbody class="cart-item">
+                        <tr class="cart-item">
+                            <td><img src="https://via.placeholder.com/100" alt="Produto 1"></td>
+                            <td>Whey Protein</td>
+                            <td>256GB, Navy Blue</td>
+                            <td>2 x R$ 100,00</td>
+                            <td><span class="price">$900</span></td>
+                            <td><button class="delete">🗑</button></td>
+                        </tr>
+                        <tr class="cart-item">
+                            <td><img src="https://via.placeholder.com/100" alt="Produto 1"></td>
+                            <td>Creatina Monohidratada</td>
+                            <td>256GB, Navy Blue</td>
+                            <td>2 x R$ 100,00</td>
+                            <td><span class="price">$900</span></td>
+                            <td><button class="delete">🗑</button></td>
+                        </tr>
+                        <tr class="cart-item">
+                            <td><img src="https://via.placeholder.com/100" alt="Produto 1"></td>
+                            <td>BCAA</td>
+                            <td>256GB, Navy Blue</td>
+                            <td>2 x R$ 100,00</td>
+                            <td><span class="price">$900</span></td>
+                            <td><button class="delete">🗑</button></td>
+                        </tr>
+                        <tr class="cart-item">
+                            <td><img src="https://via.placeholder.com/100" alt="Produto 1"></td>
+                            <td>Produto 1</td>
+                            <td>256GB, Navy Blue</td>
+                            <td>2 x R$ 100,00</td>
+                            <td><span class="price">$900</span></td>
+                            <td><button class="delete">🗑</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <br><br>
+                <!-- Botão de voltar -->
+                <a href="home.html" class="back-btn">← Continue comprando</a>
+
+                <!-- <div class="cart-item">
                 <img src="iphone.png" alt="Iphone 11 pro">
                 <div class="item-details">
                     <h3>Iphone 11 pro</h3>
@@ -40,7 +90,7 @@
                 <span class="price">$900</span>
                 <button class="delete">🗑</button>
             </div>
-
+            
             <div class="cart-item">
                 <img src="samsung.png" alt="Samsung Galaxy Note 10">
                 <div class="item-details">
@@ -51,7 +101,7 @@
                 <span class="price">$900</span>
                 <button class="delete">🗑</button>
             </div>
-
+            
             <div class="cart-item">
                 <img src="canon.png" alt="Canon EOS M50">
                 <div class="item-details">
@@ -62,7 +112,7 @@
                 <span class="price">$1199</span>
                 <button class="delete">🗑</button>
             </div>
-
+            
             <div class="cart-item">
                 <img src="macbook.png" alt="MacBook Pro">
                 <div class="item-details">
@@ -72,32 +122,38 @@
                 </div>
                 <span class="price">$1799</span>
                 <button class="delete">🗑</button>
+            </div>-->
             </div>
-        </div>
 
-        <div class="checkout">
-            <h2>Card details</h2>
-            <form>
-                <div class="card-types">
-                    <img src="mastercard.png" alt="Mastercard">
-                    <img src="visa.png" alt="Visa">
-                    <img src="paypal.png" alt="Paypal">
+            <div class="checkout">
+                <h2>Card details</h2>
+                <form>
+                    <div class="card-types">
+                        <i class="fa-brands fa-cc-mastercard"></i>
+                        <i class="fa-brands fa-cc-visa"></i>
+                        <i class="fa-brands fa-cc-paypal"></i>
+                    </div>
+
+                    <input type="text" placeholder="Nome completo">
+                    <input type="text" placeholder="Número">
+                    <input type="text" placeholder="Validade">
+                    <input type="text" placeholder="CVV">
+                </form>
+
+                <div class="summary">
+                    <p>Subtotal: <span>$4798.00</span></p>
+                    <p>Desconto: <span>$20.00</span></p>
+                    <p>Total (Taxas inclusas): <span>$4818.00</span></p>
                 </div>
 
-                <input type="text" placeholder="Cardholder's Name">
-                <input type="text" placeholder="Card Number">
-                <input type="text" placeholder="Expiration">
-                <input type="text" placeholder="CVV">
-            </form>
-
-            <div class="summary">
-                <p>Subtotal: <span>$4798.00</span></p>
-                <p>Shipping: <span>$20.00</span></p>
-                <p>Total (Incl. taxes): <span>$4818.00</span></p>
+                <button class="checkout-btn">Comprar</button>
             </div>
-
-            <button class="checkout-btn">$4818.00 CHECKOUT</button>
         </div>
-    </div>
+    </main>
+
+    <footer class="center">
+        <p>&copy; 2024 FitTech. Todos os direitos reservados.</p>
+    </footer>
 </body>
+
 </html>
