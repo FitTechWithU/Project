@@ -9,12 +9,12 @@
 }
 
 :root {
-  --cor_de_destaque: #4f6cff;
+  --cor_de_destaque: #ffd468;
   --fonte_branca: #fff;
   --fundo_claro: #f2f1f1;
   --fonte_preta: #000;
-  --background_claro: #4f6cff87;
-  --span_color: #223ecc;
+  --background_claro: rgba(253, 173, 0, 0.418);
+  --span_color: #ee8803;
 }
 
 header {
@@ -29,8 +29,14 @@ header nav {
 }
 
 header a {
-  color: var(--fonte_branca);
+  color: var(--fonte_preta);
   text-transform: uppercase;
+  transition: 0.5s;
+}
+
+header a:hover {
+  color: var(--span_color);
+  font-size: 1.1em;
 }
 
 header i {
@@ -39,6 +45,7 @@ header i {
 
 h1 {
   font-size: 2em;
+  color: var(--fonte_preta);
 }
 
 .first_container {
@@ -51,7 +58,7 @@ h1 {
 }
 
 .square {
-  background-color: rgba(79, 108, 255, 0.75);
+  background-color: #e3b747bf;
   padding: 10px 20px;
 }
 
@@ -96,7 +103,7 @@ h2 {
 }
 
 .second_container {
-  color: var(--fonte_branca);
+  color: var(--fonte_preta);
   background-color: var(--background_claro);
   padding: 28px 0px;
 }
@@ -146,6 +153,12 @@ span {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 1em;
+  transition: 0.5s;
+}
+
+.third_container button:hover {
+  background-color: #e3b747;
+  cursor: pointer;
 }
 
 .third_container a {
