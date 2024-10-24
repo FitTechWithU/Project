@@ -25,6 +25,10 @@ header {
   justify-content: space-between;
   background-color: var(--cor_de_destaque);
   align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 1000; /* Garante que a navbar fique na frente */
+  top: 0;
 }
 
 header nav {
@@ -36,6 +40,7 @@ header a {
   color: var(--fonte_preta);
   text-transform: uppercase;
   transition: 0.5s;
+  
 }
 
 header a:hover {
@@ -66,6 +71,7 @@ p{
   /* Centraliza a imagem */
   background-repeat: no-repeat;
   /* Impede que a imagem se repita */
+  margin-top: 100px;
 }
 
 .square {
@@ -145,7 +151,7 @@ h2 {
   color: var(--fonte_preta);
   /* background-color: var(--background_claro); */
   background-image: url(../img/background_opcional.jpeg);
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
   background-attachment: fixed;
   background-size: 100%;
   padding: 28px 0px;
@@ -174,6 +180,7 @@ span {
 .third_container {
   background-color: var(--fundo_claro);
   padding: 48px 0px 20px 0px;
+  margin-top: 100px;
 }
 
 .box img {
