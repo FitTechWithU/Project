@@ -28,6 +28,10 @@ header {
     display: flex;
     flex-direction: row;
     padding: 15px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000; /* Garante que a navbar fique na frente */
+    top: 0;
 }
 
 header nav {
@@ -89,6 +93,7 @@ table {
     justify-content: space-between;
     width: 80%;
     margin: 50px auto;
+    margin-top: 150px;
 }
 
 .cart {
