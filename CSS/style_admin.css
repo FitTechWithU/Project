@@ -66,6 +66,17 @@ h1 {
     padding: 20px;
 }
 
+.container a {
+    margin: 0 14px;
+    transition: 0.5s;
+    font-size: 1.1em;
+}
+
+.container a:hover {
+    color: #ffd468;
+    font-size: 1.2em;
+}
+
 
 
 
