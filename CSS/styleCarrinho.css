@@ -14,11 +14,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0; */
+    /* height: 100vh; */
 }
 
 header {
@@ -253,11 +249,11 @@ footer {
     background-color: #ffd468;
     color: #000000;
     padding: 28px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
-.container {
-    flex: 1;
-}
 
 .important {
     color: #ffd468;

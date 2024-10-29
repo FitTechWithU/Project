@@ -15,12 +15,16 @@
     <!-- Navbar -->
     <header class="flex_row">
         <nav class="center">
-            <a href="index.html#sobre_scroll">Sobre nós</a>
-            <a href="index.html#instrutores_scroll">Instrutores</a>
-            <a href="index.html#produtos_scroll">Produtos</a>
-            <a href="">Contato</a>
+            <a href="index#sobre_scroll">Sobre nós</a>
+            <a href="index#instrutores_scroll">Instrutores</a>
+            <a href="index#produtos_scroll">Produtos</a>
+            <a href="index#projeto_scroll">Projeto</a>
+            <a href="contato.html">Contato</a>
         </nav>
         <div>
+            <a href="carrinho.html">
+                <i class="fa-solid fa-cart-shopping fa-2xl" style="color: #000;"></i>
+            </a>
             <a href="perfil.html">
                 <i class="fa-solid fa-user fa-2xl"></i>
             </a>
@@ -29,20 +33,34 @@
 
 
     <div class="container">
-        <div class="login">
-            <h2>Login</h2>
-            <form>
-                <label for="email">Email</label>
-                <input type="email">
+        
+        <div class="contact">
 
-                <label for="senha">Senha</label>
-                <input type="password">
+            <h2>Entre em contato</h2>
+
+            <form class="contact-form">
+                <label for="first-name">Primeiro Nome</label>
+                <input type="text" id="first-name" name="first-name" placeholder="Seu primeiro nome" required>
+
+                <label for="last-name">Sobrenome</label>
+                <input type="text" id="last-name" name="last-name" placeholder="Seu sobrenome" required>
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+
+                <label for="phone">Número de Telefone</label>
+                <input type="tel" id="phone" name="phone" placeholder="(99) 99999-9999">
+
+                <label for="message">Motivo do Contato</label>
+                <textarea id="message" name="message" rows="6" placeholder="Escreva sua mensagem aqui..."
+                    required></textarea>
+
             </form>
 
 
             <br>
 
-            <button class="login-btn">Entrar</button>
+            <button class="contact-btn">Enviar</button>
         </div>
     </div>
 

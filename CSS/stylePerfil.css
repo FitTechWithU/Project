@@ -14,6 +14,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    min-height: 100vh;
 }
 
 header {
@@ -50,8 +51,8 @@ header i {
     padding: 28px;
 }
 
-.login {
-    background-color: #ffffff;
+.contact {
+    /* background-color: #ffffff; */
     border-radius: 8px;
     color: black;
     padding: 40px;
@@ -63,11 +64,13 @@ header i {
     
 }
 .container {
-    background-color: #ffffff;
+    background-color: #f2f1f1;
     width: 50%;
     flex-direction: column;
     margin-left: 50%;
     display: flex;
+    position: fixed;
+    height: -webkit-fill-available;
 }
 
 label {
@@ -75,25 +78,32 @@ label {
     margin-top: 15px;
 }
 
-.login h2 {
+.contact h2 {
     font-size: 1.9rem;
     color: #ee8803;
     text-align: center;
     text-transform: uppercase;
 }
 
-.login input {
+.contact input, .contact textarea {
     margin-top: 5px;
     border: 1px solid #bbb;
-    border-radius: 5px;
-    background-color: #f8f8f8;
+    /* background-color: #f8f8f8; */
     box-sizing: border-box;
     width: 100%;
     padding: 10px;
-    box-shadow: 0 4px 30px #ffd46838;
+    /* box-shadow: 0 4px 30px #ffd46838; */
 }
 
-.login-btn {
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.contact-btn {
     width: 100%;
     padding: 15px;
     background-color: #ffd468;
@@ -106,7 +116,7 @@ label {
     margin-top: 20px;
 }
 
-.login-btn:hover {
+.contact-btn:hover {
     background-color: #e3b747;
 }
 
@@ -120,4 +130,7 @@ footer {
     background-color: #ffd468;
     color: #000000;
     padding: 28px;
+    position: fixed; 
+    bottom: 0;
+    width: 100%;
 }
