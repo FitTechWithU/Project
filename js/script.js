@@ -1,11 +1,13 @@
 var senha_confirmacao = document.getElementById("senha_confirmacao");
 var senha = document.getElementById("senha");
-
+const email = document.getElementById("email").value;
+const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 var formulario = document.getElementById("formulario");
 
 function validacaoCampos () {
 
     let valido = true;
+    
     var div = document.getElementById("erro_senha_confirmacao");
     if (!formulario.checkValidity()) {
         valido = false;
