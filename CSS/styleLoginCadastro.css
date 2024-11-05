@@ -114,6 +114,14 @@ a {
     opacity: 0.9;
 }
 
+.hidden {
+    display: none;
+}
+
+.error {
+    color: #db4437;
+}
+
 /* Estilos para telas menores, como smartphones */
 @media (max-width: 600px) {
     body {
