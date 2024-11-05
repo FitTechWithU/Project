@@ -49,7 +49,7 @@
 
             $stmt->execute();
             session_destroy();
-            header("Location: login.html");
+            header("Location: login.php");
             exit;
 
         } catch (PDOException $e) {
@@ -104,7 +104,7 @@
 
                 <br><br>
 
-                <p>Já possui uma conta? Faça <a href="login.html">login</a>!</p>
+                <p>Já possui uma conta? Faça <a href="login.php">login</a>!</p>
 
                 <button type="button" onclick="validacaoCampos()">Cadastrar</button>
             
