@@ -11,13 +11,23 @@
         $email = $_POST['email'];
         $senha = $_POST['senha'];
         $senha_confirmacao = $_POST['senha_confirmacao'];
-        
+
         try {
             
             $sql = "SELECT id_usuario FROM usuarios WHERE email = :email";
             $stmt = $conn->prepare($sql);
             $stmt->bindParam(':email', $email);
             $stmt->execute();
+            
+            $dataAtual = new DateTime();
+            $dataNascimento = new DateTime($data_nasc);
+            $idade = $dataAtual->diff($dataNascimento)->y;
+            
+            if ($idade < 16) {
+                $_SESSION["erro_idade"] = "Você precisa ter pelo menos 16 anos para se cadastrar.";
+                header("Location: cadastro.php");
+                exit();
+            }
             
             if ($stmt->rowCount() > 0) {
                 $_SESSION["erro_email"] = "Esse e-mail já foi cadastrado!";
@@ -68,6 +78,12 @@
 
                 <label for="dataNascimento">Data de Nascimento</label>
                 <input type="date" id="date" name="date" required>
+                <?php 
+                    if(isset($_SESSION["erro_idade"])) {
+                        echo "<div class='error'>".$_SESSION["erro_idade"]."</div>";
+                        unset($_SESSION["erro_idade"]);
+                    }
+                ?>
 
                 <label for="email">E-mail</label>
                 <input type="email" id="email" name="email" required>
