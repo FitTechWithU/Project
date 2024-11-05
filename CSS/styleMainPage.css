@@ -66,6 +66,12 @@ p {
   text-align: center;
 }
 
+.sobre-fit {
+  font-size: 1.2rem;
+  margin: auto 400px;
+  
+}
+
 .first_container {
   height: 40vh;
   color: var(--fonte_branca);
@@ -172,7 +178,7 @@ span {
 
 .Instructors {
   margin-top: 20px;
-  gap: 120px;
+  gap: 80px;
 }
 
 .redes_sociais {
@@ -382,7 +388,7 @@ strong {
   margin-right: 0;
   float: right;
   /* height: 100%; */
-  /* width: 100%; */
+  width: 28%;
   padding: 5px;
   /* border: 1px solid; */
   padding-left: 20px;
@@ -392,7 +398,7 @@ strong {
   display: flex;
   /* height: 100%; */
   margin-bottom: 20px;
-  /* width: 100%; */
+  width: 100%;
 }
 
 .content {
@@ -408,7 +414,7 @@ strong {
   display: inline-flex;
   border-radius: 6px;
   padding: 8px;
-  width: 320px;
+  width: 100%;
 }
 
 .table-scndBox{
@@ -452,4 +458,5 @@ strong {
 
 .sua-conta {
   text-align: center;
+  text-transform: uppercase;
 }
