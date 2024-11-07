@@ -31,10 +31,10 @@
             <a href="contato.html">Contato</a>
         </nav>
         <div>
-            <a href="carrinho.html">
+            <a href="carrinho.php">
                 <i class="fa-solid fa-cart-shopping fa-2xl" style="color: #000;"></i>
             </a>
-            <a href="perfil.html">
+            <a href="perfil.php">
                 <i class="fa-solid fa-user fa-2xl" style="color: var(--span_color);"></i>
             </a>
         </div>

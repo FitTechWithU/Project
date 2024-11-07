@@ -1,3 +1,9 @@
+<?php
+
+    require_once "../models/conexao.php";
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -5,7 +11,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="CSS/styleCarrinho.css">
+    <link rel="stylesheet" href="../CSS/styleCarrinho.css">
     <script src="https://kit.fontawesome.com/f9a0acd7af.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>Shopping Cart</title>
@@ -15,17 +21,17 @@
     <!-- Navbar -->
     <header class="flex_row">
         <nav class="center">
-            <a href="index.html#sobre_scroll">Sobre nós</a>
-            <a href="index.html#instrutores_scroll">Instrutores</a>
-            <a href="index.html#produtos_scroll">Produtos</a>
-            <a href="index.html#projeto_scroll">Projeto</a>
-            <a href="contato.html">Contato</a>
+            <a href="index.php#sobre_scroll">Sobre nós</a>
+            <a href="index.php#instrutores_scroll">Instrutores</a>
+            <a href="index.php#produtos_scroll">Produtos</a>
+            <a href="index.php#projeto_scroll">Projeto</a>
+            <a href="contato.php">Contato</a>
         </nav>
         <div>
-            <a href="carrinho.html">
+            <a href="carrinho.php">
                 <i class="fa-solid fa-cart-shopping fa-2xl" style="color: #ee8803"></i>
             </a>
-            <a href="perfil.html">
+            <a href="perfil.php">
                 <i class="fa-solid fa-user fa-2xl"></i>
             </a>
         </div>
