@@ -1,3 +1,11 @@
+<?php 
+
+    require_once "../models/conexao.php";
+
+    session_start();
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -5,7 +13,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>FitTech</title>
-        <link rel="stylesheet" href="CSS/styleLoginCadastro.css">
+        <link rel="stylesheet" href="../CSS/styleMainPage.css">
         <script src="https://kit.fontawesome.com/f4014b9e29.js" crossorigin="anonymous"></script>
         <script src="https://kit.fontawesome.com/f9a0acd7af.js" crossorigin="anonymous"></script>
     </head>
@@ -23,7 +31,7 @@
                 <a href="carrinho.html">
                     <i class="fa-solid fa-cart-shopping fa-2xl" style="color: #000;"></i>
                 </a>
-                <a href="perfil.html">
+                <a href="perfil.php">
                     <i class="fa-solid fa-user fa-2xl"></i>
                 </a>
             </div>
@@ -49,7 +57,7 @@
                 </button>
             </div>
             <br>
-            <p id="instrutores_scroll">
+            <p>
                 A <span>FitTech</span> é uma academia moderna, focada no bem-estar e na saúde dos seus alunos. <br>
                 Nosso objetivo é proporcionar uma experiência completa de cuidado físico e mental, <br>
                 com programas variados que atendem diferentes níveis de condicionamento e objetivos pessoais.
@@ -57,15 +65,15 @@
             <br><br>
             <div class="image-container">
                 <div class="left-image">
-                    <img src="img/image1.jpg" alt="Imagem vertical">
+                    <img src="../img/image1.jpg" alt="Imagem vertical">
                 </div>
                 <div class="right-images">
-                    <img src="img/image2.jpg" alt="Imagem horizontal 1" class="image_right1">
-                    <img src="img/image3.jpg" alt="Imagem horizontal 2" class="image_right2">
+                    <img src="../img/image2.jpg" alt="Imagem horizontal 1" class="image_right1">
+                    <img src="../img/image3.jpg" alt="Imagem horizontal 2" class="image_right2">
                 </div>
             </div>
 
-            <div class="center up">
+            <div class="center up" id="instrutores_scroll">
                 <i class="fa-solid fa-dumbbell"></i>
             </div>
         </main>
@@ -75,17 +83,17 @@
             <h2>Conheça nossos <span>Instrutores</span></h2>
             <div class="flex_row Instructors">
                 <div class="card center flex_column">
-                    <img src="img/pessoas/prof1.webp" alt="Professor1">
+                    <img src="../img/pessoas/prof1.webp" alt="Professor1">
                     <p><strong>Rafael Costa</strong></p>
                     <p>Personal Trainer</p>
                 </div>
                 <div class="card center flex_column">
-                    <img src="img/pessoas/prof2.webp" alt="Professora2">
+                    <img src="../img/pessoas/prof2.webp" alt="Professora2">
                     <p><strong>Ana Clara Martins</strong></p>
                     <p>Instrutora de Yoga</p>
                 </div>
                 <div class="card center flex_column">
-                    <img src="img/pessoas/prof3.webp" alt="Professor3">
+                    <img src="../img/pessoas/prof3.webp" alt="Professor3">
                     <p><strong>Lucas Almeida</strong></p>
                     <p>Preparador Físico</p>
                 </div>
@@ -99,28 +107,28 @@
             <h2 id="produtos_scroll">Temos <span>Produtos para você!</span></h2>
             <div class="products flex_row">
                 <div class="box center flex_column">
-                    <img src="img/produtos/produto1.jpg" alt="Produto1">
+                    <img src="../img/produtos/produto1.jpg" alt="Produto1">
                     <br>
                     <p class="titulo_produto">Whey Protein</p>
                     <p>R$58,00</p>
                     <button>Adicionar ao carrinho</button>
                 </div>
                 <div class="box center flex_column">
-                    <img src="img/produtos/produto2.jpg" alt="Produto2">
+                    <img src="../img/produtos/produto2.jpg" alt="Produto2">
                     <br>
                     <p class="titulo_produto">Creatina Monohidratada</p>
                     <p>R$58,00</p>
                     <button>Adicionar ao carrinho</button>
                 </div>
                 <div class="box center flex_column">
-                    <img src="img/produtos/produto3.jpg" alt="Produto3">
+                    <img src="../img/produtos/produto3.jpg" alt="Produto3">
                     <br>
                     <p class="titulo_produto">BCAA</p>
                     <p>R$58,00</p>
                     <button>Adicionar ao carrinho</button>
                 </div>
                 <div class="box center flex_column">
-                    <img src="img/produtos/produto3.jpg" alt="Produto3">
+                    <img src="../img/produtos/produto3.jpg" alt="Produto3">
                     <br>
                     <p class="titulo_produto">BCAA</p>
                     <p>R$58,00</p>
@@ -166,7 +174,7 @@
 
             <div class="flex_row Instructors">
                 <div class="card center flex_column">
-                    <img src="img/equipe/alexia.jpeg" alt="Aléxia">
+                    <img src="../img/equipe/alexia.jpeg" alt="Aléxia">
                     <p><strong>Aléxia Cazale</strong></p>
                     <div class="redes_sociais">
                         <a href="https://www.instagram.com/alexiarc/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
@@ -175,7 +183,7 @@
                     </div>
                 </div>
                 <div class="card center flex_column">
-                    <img src="img/equipe/geovana.jpeg" alt="Geovana">
+                    <img src="../img/equipe/geovana.jpeg" alt="Geovana">
                     <p><strong>Geovana Valentim</strong></p>
                     <div class="redes_sociais">
                         <a href="https://www.instagram.com/genova.png/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
@@ -184,7 +192,7 @@
                     </div>
                 </div>
                 <div class="card center flex_column">
-                    <img src="img/equipe/lucas.jpeg" alt="Lucas">
+                    <img src="../img/equipe/lucas.jpeg" alt="Lucas">
                     <p><strong>Lucas Ventura</strong></p>
                     <div class="redes_sociais">
                         <a href="https://github.com/Lucasmourav" target="_blank"><i class="fa-brands fa-github"></i></a>
@@ -192,12 +200,12 @@
                     </div>
                 </div>
                 <div class="card center flex_column">
-                    <img src="img/equipe/tiago.jpeg" alt="Tiago">
+                    <img src="../img/equipe/tiago.jpeg" alt="Tiago">
                     <p><strong>Tiago Casale</strong></p>
                     <div class="redes_sociais">
                         <a href="https://www.instagram.com/tiagocasale.tcb/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                         <a href="https://github.com/ZFrosk" target="_blank"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://wa.me/qr/5JXOKA56PQJTP1"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://wa.me/qr/5JXOKA56PQJTP1" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
                     </div>
                 </div>
             </div>
@@ -215,19 +223,19 @@
 
             <div class="flex_row prototipo">
                 <div class="card center flex_column">
-                    <img src="img/prototipo/Home.png" alt="Página Home - protótipo">
+                    <img src="../img/prototipo/Home.png" alt="Página Home - protótipo">
                 </div>
                 <div class="card center flex_column">
-                    <img src="img/prototipo/Login.png" alt="Página Login - Protótipo">
+                    <img src="../img/prototipo/Login.png" alt="Página Login - Protótipo">
                 </div>
 
             </div>
             <div class="flex_row prototipo">
                 <div class="card center flex_column">
-                    <img src="img/prototipo/Cadastro.png" alt="Página Cadastro - Protótipo">
+                    <img src="../img/prototipo/Cadastro.png" alt="Página Cadastro - Protótipo">
                 </div>
                 <div class="card center flex_column">
-                    <img src="img/prototipo/Admin.png" alt="Página Admin - Protótipo">
+                    <img src="../img/prototipo/Admin.png" alt="Página Admin - Protótipo">
                 </div>
         </section>
 
