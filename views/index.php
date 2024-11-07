@@ -25,10 +25,10 @@
                 <a href="#instrutores_scroll">Instrutores</a>
                 <a href="#produtos_scroll">Produtos</a>
                 <a href="#projeto_scroll">Projeto</a>
-                <a href="contato.html">Contato</a>
+                <a href="contato.php">Contato</a>
             </nav>
             <div>
-                <a href="carrinho.html">
+                <a href="carrinho.php">
                     <i class="fa-solid fa-cart-shopping fa-2xl" style="color: #000;"></i>
                 </a>
                 <a href="perfil.php">
@@ -147,7 +147,7 @@
         </section>
 
         <section class="fourth_container center flex_column">
-            <h2 id="projeto_scroll">Sobre o que a <span>FitTech</span> se trata?</h2>
+            <h2 >Sobre o que a <span>FitTech</span> se trata?</h2>
             <p class="sobre-fit">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil facere ipsum quod aspernatur ex et praesentium
                 assumenda nostrum nobis deleniti incidunt perspiciatis sed, doloremque quibusdam, quam ut eveniet tempora
                 id. <br>
@@ -158,7 +158,7 @@
 
             <br><br>
 
-            <button>
+            <button id="contato_equipe"> 
                 <a href="#contato_equipe">
                     Conheça a equipe
                     <i class="fa-solid fa-down-long"></i>
@@ -170,7 +170,7 @@
         </section>
 
         <section class="fifth_container center flex_column">
-            <h2 id="contato_equipe">Conheça nossa <span>equipe</span>!</h2>
+            <h2>Conheça nossa <span>equipe</span>!</h2>
 
             <div class="flex_row Instructors">
                 <div class="card center flex_column">
@@ -202,7 +202,7 @@
                 <div class="card center flex_column">
                     <img src="../img/equipe/tiago.jpeg" alt="Tiago">
                     <p><strong>Tiago Casale</strong></p>
-                    <div class="redes_sociais">
+                    <div class="redes_sociais" id="projeto_scroll">
                         <a href="https://www.instagram.com/tiagocasale.tcb/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                         <a href="https://github.com/ZFrosk" target="_blank"><i class="fa-brands fa-github"></i></a>
                         <a href="https://wa.me/qr/5JXOKA56PQJTP1" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
