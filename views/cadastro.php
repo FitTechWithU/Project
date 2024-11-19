@@ -7,20 +7,20 @@
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $nome = $_POST['name'];
-        $data_nasc = $_POST['date'];
+        $data_nascimento = $_POST['date'];
         $email = $_POST['email'];
         $senha = $_POST['senha'];
         $senha_confirmacao = $_POST['senha_confirmacao'];
 
         try {
             
-            $sql = "SELECT id_usuario FROM usuarios WHERE email = :email";
+            $sql = "SELECT idusuario FROM usuario WHERE email = :email";
             $stmt = $conn->prepare($sql);
             $stmt->bindParam(':email', $email);
             $stmt->execute();
             
             $dataAtual = new DateTime();
-            $dataNascimento = new DateTime($data_nasc);
+            $dataNascimento = new DateTime($data_nascimento);
             $idade = $dataAtual->diff($dataNascimento)->y;
             
             if ($idade < 16) {
@@ -37,13 +37,13 @@
 
             $senha_hash = password_hash($senha, PASSWORD_DEFAULT);
 
-            $sql = "INSERT INTO usuarios (nome, data_nasc, email, senha)
-            VALUES (:nome, :data_nasc, :email, :senha)";
+            $sql = "INSERT INTO usuario (nome, data_nascimento, email, senha)
+            VALUES (:nome, :data_nascimento, :email, :senha)";
 
             $stmt = $conn->prepare($sql);
 
             $stmt->bindParam(':nome', $nome);
-            $stmt->bindParam(':data_nasc', $data_nasc);
+            $stmt->bindParam(':data_nascimento', $data_nascimento);
             $stmt->bindParam(':email', $email);
             $stmt->bindParam(':senha', $senha_hash);
 
@@ -105,8 +105,9 @@
                 <br><br>
 
                 <p>Já possui uma conta? Faça <a href="login.php">login</a>!</p>
+                <input type="submit" class="enviar"> 
 
-                <button type="button" onclick="validacaoCampos()">Cadastrar</button>
+                <!-- <button type="button" onclick="validacaoCampos()">Cadastrar</button> -->
             
             </form>
         </div>

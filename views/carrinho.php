@@ -2,6 +2,13 @@
 
     require_once "../models/conexao.php";
 
+    session_start();
+
+    if (!isset($_SESSION['idusuario'])) {
+        header("Location: login.php");
+        exit();
+    }
+
 ?>
 
 <!DOCTYPE html>
@@ -192,15 +199,27 @@
             });
         }
 
-        function process(quant) {
-            var value = parseInt(document.querySelectorAll(".quant").value);
-            value += quant;
-            if (value < 1) {
-                document.querySelectorAll(".quant").value = 1;
-            } else {
-                document.querySelectorAll(".quant").value = value;
-            }
+        function process(button, quant) {
+        // Identifica o input de quantidade associado ao botão clicado
+        const quantInput = button.parentElement.querySelector('.quant');
+        let value = parseInt(quantInput.value); // Obtém o valor atual da quantidade
+        
+        // Atualiza o valor com a mudança
+        value += quant;
+        if (value < 1) {
+            value = 1; // Garante que a quantidade não seja menor que 1
         }
+        quantInput.value = value; // Define o novo valor no campo
+    }
+
+        // Adiciona eventos aos botões de mais e menos dinamicamente
+        document.querySelectorAll('.input_qnt').forEach(button => {
+            button.addEventListener('click', function () {
+                // Detecta o tipo de botão e chama a função process
+                const isIncrease = this.id === 'minus'; // Botão "+" tem id "minus" no seu HTML
+                process(this, isIncrease ? 1 : -1);
+            });
+        });
 
     </script>
 

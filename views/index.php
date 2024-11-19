@@ -27,14 +27,27 @@
                 <a href="#projeto_scroll">Projeto</a>
                 <a href="contato.php">Contato</a>
             </nav>
-            <div>
-                <a href="carrinho.php">
-                    <i class="fa-solid fa-cart-shopping fa-2xl" style="color: #000;"></i>
-                </a>
-                <a href="perfil.php">
-                    <i class="fa-solid fa-user fa-2xl"></i>
-                </a>
-            </div>
+            <?php
+                if(!isset($_SESSION["idusuario"])){
+                    echo '<div>';
+                        echo '<a href="login.php">Login</a> &nbsp; &nbsp;';
+                        echo '<a href="cadastro.php">Cadastro</a>';
+                    echo '</div>';
+                }
+            ?>
+            <?php
+                if(isset($_SESSION["idusuario"])){
+                    echo '<div>';
+                    echo '<a href="carrinho.php">';
+                        echo '<i class="fa-solid fa-cart-shopping fa-2xl" style="color: #000;"></i>';
+                    echo '</a>';
+                    echo '<a href="perfil.php">';
+                        echo '<i class="fa-solid fa-user fa-2xl"></i>';
+                    echo '</a>';
+                    echo '</div>';
+                    }
+                ?>
+           
         </header>
 
         <section class="first_container center">
@@ -177,35 +190,35 @@
                     <img src="../img/equipe/alexia.jpeg" alt="Aléxia">
                     <p><strong>Aléxia Cazale</strong></p>
                     <div class="redes_sociais">
-                        <a href="https://www.instagram.com/alexiarc/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://github.com/AlexiaCazale" target="_blank"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://wa.me/qr/K4YB4GPS26LXG1" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/alexiarc/" target="_blank"><i class="fa-brands fa-instagram" style="color: black;" style="color: black;"></i></a>
+                        <a href="https://github.com/AlexiaCazale" target="_blank"><i class="fa-brands fa-github" style="color: black;" style="color: black;"></i></a>
+                        <a href="https://wa.me/qr/K4YB4GPS26LXG1" target="_blank"><i class="fa-brands fa-whatsapp" style="color: black;" style="color: black;"></i></a>
                     </div>
                 </div>
                 <div class="card center flex_column">
                     <img src="../img/equipe/geovana.jpeg" alt="Geovana">
                     <p><strong>Geovana Valentim</strong></p>
                     <div class="redes_sociais">
-                        <a href="https://www.instagram.com/genova.png/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://github.com/gyoora" target="_blank"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://wa.me/qr/LWVRYXUW6LRFE1" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/genova.png/" target="_blank"><i class="fa-brands fa-instagram" style="color: black;"></i></a>
+                        <a href="https://github.com/gyoora" target="_blank"><i class="fa-brands fa-github" style="color: black;"></i></a>
+                        <a href="https://wa.me/qr/LWVRYXUW6LRFE1" target="_blank"><i class="fa-brands fa-whatsapp" style="color: black;"></i></a>
                     </div>
                 </div>
                 <div class="card center flex_column">
                     <img src="../img/equipe/lucas.jpeg" alt="Lucas">
                     <p><strong>Lucas Ventura</strong></p>
                     <div class="redes_sociais">
-                        <a href="https://github.com/Lucasmourav" target="_blank"><i class="fa-brands fa-github"></i></a>
-                        <i class="fa-brands fa-whatsapp"></i>
+                        <a href="https://github.com/Lucasmourav" target="_blank"><i class="fa-brands fa-github" style="color: black;"></i></a>
+                        <i class="fa-brands fa-whatsapp" style="color: black;"></i>
                     </div>
                 </div>
                 <div class="card center flex_column">
                     <img src="../img/equipe/tiago.jpeg" alt="Tiago">
                     <p><strong>Tiago Casale</strong></p>
                     <div class="redes_sociais" id="projeto_scroll">
-                        <a href="https://www.instagram.com/tiagocasale.tcb/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://github.com/ZFrosk" target="_blank"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://wa.me/qr/5JXOKA56PQJTP1" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/tiagocasale.tcb/" target="_blank"><i class="fa-brands fa-instagram" style="color: black;"></i></a>
+                        <a href="https://github.com/ZFrosk" target="_blank"><i class="fa-brands fa-github" style="color: black;"></i></a>
+                        <a href="https://wa.me/qr/5JXOKA56PQJTP1" target="_blank"><i class="fa-brands fa-whatsapp" style="color: black;"></i></a>
                     </div>
                 </div>
             </div>

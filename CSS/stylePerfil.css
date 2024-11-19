@@ -126,6 +126,32 @@ label {
     align-items: center;
 }
 
+.btn-apagar{
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    width: 105px;
+    text-align: center;
+}
+
+.btn-center{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-alterar{
+    background-color: #F2E0A6;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 6px;
+    color: black;
+    width: 105px;
+    text-align: center;
+}
+
 footer {
     background-color: #ffd468;
     color: #000000;

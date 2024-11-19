@@ -3,9 +3,9 @@
 
     require_once "../models/conexao.php";
 
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        $email = $_POST['email'];
-        $senha = $_POST['senha'];
+    if (!isset($_SESSION['idusuario'])) {
+        header("Location: index.php");
+        exit();
     }
 
 ?>

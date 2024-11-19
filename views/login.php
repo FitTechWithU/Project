@@ -3,12 +3,13 @@
     require_once "../models/conexao.php";
     session_start(); 
 
+
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $email = $_POST['email'];
         $senha = $_POST['senha'];
 
         try {
-            $sql = "SELECT id_usuario, nome, senha FROM usuarios WHERE email = :email";
+            $sql = "SELECT idusuario, nome, senha FROM usuario WHERE email = :email";
             $stmt = $conn->prepare($sql);
             $stmt->bindParam(':email', $email);
             $stmt-> execute();
@@ -19,7 +20,7 @@
 
                 if (password_verify($senha, $usuario['senha'])) {
 
-                    $_SESSION['id_usuario'] = $usuario['id_usuario'];
+                    $_SESSION['idusuario'] = $usuario['idusuario'];
                     $_SESSION['nome'] = $usuario['nome'];
 
                     header("Location: index.php");

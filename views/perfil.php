@@ -3,7 +3,7 @@
 
         session_start();
 
-        if (!isset($_SESSION['id_usuario'])) {
+        if (!isset($_SESSION['idusuario'])) {
             header("Location: login.php");
             exit();
         }
@@ -41,7 +41,7 @@
     </header>
     <br><br>
     <div class="box">
-        <h1 class="sua-conta">Conta <span><?php echo htmlspecialchars($_SESSION['nome']); ?></span></h1>
+        <h1 class="sua-conta">Conta de <span><?php echo htmlspecialchars($_SESSION['nome']); ?></span></h1>
         <br>
         <div class="three-row">
             <section class="info">
@@ -177,6 +177,14 @@
     </div>
 
     <br><br>
+
+    <div class="btn-center">
+        <!-- <a href="alterarPerfil.php" class="btn-alterar">Alterar</a> &nbsp; &nbsp; -->
+        <a href="logout.php" class="btn-apagar">Sair</a>
+    </div>
+
+    <br><br>
+
     <footer class="center">
         <p>&copy; 2024 FitTech. Todos os direitos reservados.</p>
     </footer>

@@ -191,9 +191,9 @@ span {
 }
 
 .Instructors img {
-  height: 300px;
+  height: 250px;
   border-radius: 50%;
-  width: 300px;
+  width: 250px;
   box-shadow: 0 4px 30px #00000042;
 }
 
@@ -459,4 +459,30 @@ strong {
 .sua-conta {
   text-align: center;
   text-transform: uppercase;
+}
+
+.btn-apagar{
+  background-color: red;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 6px;
+  text-decoration: none;
+  width: 105px;
+  text-align: center;
+}
+
+.btn-center{
+  display: flex;
+  justify-content: center;
+}
+
+.btn-alterar{
+  background-color: #F2E0A6;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 6px;
+  color: black;
+  width: 105px;
+  text-align: center;
 }
