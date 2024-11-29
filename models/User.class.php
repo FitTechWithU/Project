@@ -5,15 +5,19 @@
         public function getIdUsuario(){
             return $this -> idusuario;
         }
+
         public function getNome(){
             return $this -> nome;
         }
+
         public function getEmail(){
             return $this -> email;
         }
+
         public function getSenha(){
             return $this -> senha;
         }
+        
         public function getDataNascimento(){
             return $this -> data_nascimento; // -> format('d/m/Y');
         } 
