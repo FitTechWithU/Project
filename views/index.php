@@ -205,14 +205,6 @@
                     </div>
                 </div>
                 <div class="card center flex_column">
-                    <img src="../img/equipe/lucas.jpeg" alt="Lucas">
-                    <p><strong>Lucas Ventura</strong></p>
-                    <div class="redes_sociais">
-                        <a href="https://github.com/Lucasmourav" target="_blank"><i class="fa-brands fa-github" style="color: black;"></i></a>
-                        <i class="fa-brands fa-whatsapp" style="color: black;"></i>
-                    </div>
-                </div>
-                <div class="card center flex_column">
                     <img src="../img/equipe/tiago.jpeg" alt="Tiago">
                     <p><strong>Tiago Casale</strong></p>
                     <div class="redes_sociais" id="projeto_scroll">
